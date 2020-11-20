@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pinterest.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="IndianRed" Padding="24" CornerRadius="0">
+            <Label Text="Pinterest" HorizontalTextAlignment="Center" TextColor="FloralWhite" FontSize="36"/>
+        </Frame>
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                 
+            <BoxView Color="GhostWhite" />
+            <Button Text="All" Clicked="Button_Clicked" CornerRadius="60" TextColor="Black" FontSize="Small" BackgroundColor="GhostWhite" HorizontalOptions="Center" VerticalOptions="Center"/>
+            
+            <BoxView Grid.Column="1"
+                Color="GhostWhite" />
+            <Button Text="Following" Clicked="Button_Clicked" CornerRadius="60" TextColor="Black" FontSize="Small" BackgroundColor="GhostWhite" VerticalOptions="Center" />
+                
+            <BoxView Grid.Column="2"
+                Color=" GhostWhite" />
+            <Button Text="Home" Clicked="Button_Clicked" CornerRadius="60" TextColor="Black" FontSize="Small" BackgroundColor="GhostWhite" VerticalOptions="Center"/>
+            
+            <BoxView Grid.Column="3"
+                Color="GhostWhite" />
+            <Button Text="Make up" Clicked="Button_Clicked" CornerRadius="60" TextColor="Black" FontSize="Small" BackgroundColor="GhostWhite" VerticalOptions="Center"/>
+
+            <BoxView Grid.Column="4"
+                Color="White"/>
+            <Button Text="Motivation" Clicked="Button_Clicked" CornerRadius="60" TextColor="Black" FontSize="Small" BackgroundColor="GhostWhite" VerticalOptions="Center"/>
+            
+        </Grid>
+        <Image Source="image 1" CornerRadius="80" >
+            <Image Source="image2" CornerRadius="80">
+                <Image Source="image3" CornerRadius="80">
+                    <Image Source="image 4" CornerRadius="80" >
+                        
+    </StackLayout>
+
+</ContentPage>
