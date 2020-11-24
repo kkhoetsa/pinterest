@@ -26,26 +26,28 @@
             
             <BoxView Grid.Column="1"
                 Color="GhostWhite" />
-            <Button Text="Following" Clicked="Button_Clicked" CornerRadius="60" TextColor="Black" FontSize="Small" BackgroundColor="GhostWhite" VerticalOptions="Center" />
+            <Button Grid.Column="1"  Text="Following" Clicked="Button_Clicked" CornerRadius="60" TextColor="Black" FontSize="Micro" BackgroundColor="GhostWhite" VerticalOptions="Center" />
                 
             <BoxView Grid.Column="2"
                 Color=" GhostWhite" />
-            <Button Text="Home" Clicked="Button_Clicked" CornerRadius="60" TextColor="Black" FontSize="Small" BackgroundColor="GhostWhite" VerticalOptions="Center"/>
+            <Button Grid.Column="2" Text="Home" Clicked="Button_Clicked" CornerRadius="60" TextColor="Black" FontSize="Small" BackgroundColor="GhostWhite" VerticalOptions="Center"/>
             
             <BoxView Grid.Column="3"
                 Color="GhostWhite" />
-            <Button Text="Make up" Clicked="Button_Clicked" CornerRadius="60" TextColor="Black" FontSize="Small" BackgroundColor="GhostWhite" VerticalOptions="Center"/>
+            <Button Grid.Column="3" Text="Make up" Clicked="Button_Clicked" CornerRadius="60" TextColor="Black" FontSize="Small" BackgroundColor="GhostWhite" VerticalOptions="Center"/>
 
             <BoxView Grid.Column="4"
                 Color="White"/>
-            <Button Text="Motivation" Clicked="Button_Clicked" CornerRadius="60" TextColor="Black" FontSize="Small" BackgroundColor="GhostWhite" VerticalOptions="Center"/>
+            <Button Grid.Column="4" Text="Motivation" Clicked="Button_Clicked" CornerRadius="60" TextColor="Black" FontSize="Micro" BackgroundColor="GhostWhite" VerticalOptions="Center"/>
             
         </Grid>
-        <Image Source="image 1" CornerRadius="80" >
-            <Image Source="image2" CornerRadius="80">
-                <Image Source="image3" CornerRadius="80">
-                    <Image Source="image 4" CornerRadius="80" >
-                        
+        <Frame CornerRadius="80" >
+        <Image Source="image1.jpg" />
+        </Frame>
+            <Image Source="image2.jpg" />
+            <Image Source="image3.jpg" />
+                <Image Source="image4.jpg" />
+
     </StackLayout>
 
 </ContentPage>
