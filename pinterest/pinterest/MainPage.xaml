@@ -2,11 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="pinterest.MainPage">
+    <ScrollView>
 
     <StackLayout>
-        <Frame BackgroundColor="IndianRed" Padding="24" CornerRadius="0">
-            <Label Text="Pinterest" HorizontalTextAlignment="Center" TextColor="FloralWhite" FontSize="36"/>
-        </Frame>
+       
         <Grid>
 
             <Grid.RowDefinitions>
@@ -41,13 +40,78 @@
             <Button Grid.Column="4" Text="Motivation" Clicked="Button_Clicked" CornerRadius="60" TextColor="Black" FontSize="Micro" BackgroundColor="GhostWhite" VerticalOptions="Center"/>
             
         </Grid>
-        <Frame CornerRadius="80" >
-        <Image Source="image1.jpg" />
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="350"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+                <Frame  Margin="10" BorderColor="GhostWhite"  CornerRadius="50" HeightRequest="200" WidthRequest="200" IsClippedToBounds="True" HorizontalOptions="Center" VerticalOptions="Center">
+            <Image Source="image1.jpg" Aspect="AspectFill" Margin="-20" HeightRequest="180" WidthRequest="180" />
         </Frame>
-            <Image Source="image2.jpg" />
-            <Image Source="image3.jpg" />
-                <Image Source="image4.jpg" />
+            <Frame Grid.Column="1" Margin="10"
+       BorderColor="Black"
+       CornerRadius="50"
+       HeightRequest="250"
+       WidthRequest="250"
+       IsClippedToBounds="True"
+       HorizontalOptions="Center"
+       VerticalOptions="Center">
+            <Image Source="image2.jpg"
+         Aspect="AspectFill"
+         Margin="-20"
+         HeightRequest="230"
+         WidthRequest="230" />
+        </Frame>
+        </Grid>
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="350"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+        <Frame Margin="10"
+       BorderColor="Black"
+       CornerRadius="50"
+       HeightRequest="350"
+       WidthRequest="350"
+       IsClippedToBounds="True"
+       HorizontalOptions="Center"
+       VerticalOptions="Center">
+            <Image Source="image3.jpg"
+         Aspect="AspectFill"
+         Margin="-20"
+         HeightRequest="320"
+         WidthRequest="320" />
+        </Frame>
+            <Frame Grid.Column="1" Margin="10"
+       BorderColor="Black"
+       CornerRadius="50"
+       HeightRequest="300"
+       WidthRequest="300"
+       IsClippedToBounds="True"
+       HorizontalOptions="Center"
+       VerticalOptions="Center">
+            <Image Source="image4.jpg"
+         Aspect="AspectFill"
+         Margin="-20"
+         HeightRequest="280"
+         WidthRequest="280" />
+        </Frame>
+        </Grid>
+
+
 
     </StackLayout>
+    </ScrollView>
 
 </ContentPage>
